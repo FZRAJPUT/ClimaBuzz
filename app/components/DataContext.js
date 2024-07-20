@@ -38,8 +38,8 @@ export const DataProvider = ({ children }) => {
             setCountry(data.sys.country);
             setCloud(data.weather[0].description);
             setVisibility(data.visibility);
-            setMin(data.main.temp_min);
-            setMax(data.main.temp_max);
+            setMin(Math.round(data.main.temp_min));
+            setMax(Math.round(data.main.temp_max));
             setzone(data.timezone)
             setLoading(false);
             setIsOnline(false);
