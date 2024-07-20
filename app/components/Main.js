@@ -84,11 +84,11 @@ const Main = () => {
                 <div className='aa flex font-[200] p-1.5 px-3 rounded items-center justify-between bg-[#dadada00]'>
                     <div className='flex flex-col items-center'>
                         <h5 className='text-[14px]'>Max-Temp</h5>
-                        {loading ? <Loading /> : <p className='text-[14px]'>{max}</p>}
+                        {loading ? <Loading /> : <p className='text-[14px]'>{max}°</p>}
                     </div>
                     <div className='flex flex-col items-center'>
                         <h5 className='text-[14px]'>Min-Temp</h5>
-                        {loading ? <Loading /> : <p className='text-[14px]'>{min}</p>}
+                        {loading ? <Loading /> : <p className='text-[14px]'>{min}°</p>}
                     </div>
                     <div className='flex flex-col items-center'>
                         <h5 className='text-[14px]'>Visibility</h5>
