@@ -43,7 +43,6 @@ export const DataProvider = ({ children }) => {
             setzone(data.timezone)
             setLoading(false);
             setIsOnline(false);
-            console.log(data);
         
     } catch (error) {
         console.log(error);
