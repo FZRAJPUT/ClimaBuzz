@@ -32,7 +32,7 @@ export const DataProvider = ({ children }) => {
             setWind(data.wind.speed);
             setHumadity(data.main.humidity);
             setTemp(Math.round(data.main.temp));
-            setFeels(data.main.feels_like);
+            setFeels(Math.round(data.main.feels_like));
             setPressure(data.main.pressure);
             setSea(data.main.sea_level);
             setCountry(data.sys.country);
