@@ -41,7 +41,7 @@ const Main = () => {
 
 
     return (
-        <div className='flex gap-2 flex-col items-center p-2 h-[580px] max-h-[83vh] w-[750px] max-w-[100%] rounded-md bg-[#24242486] backdrop-blur-[80px]' >
+        <div className='main flex gap-2 flex-col items-center p-2 h-[580px] max-h-[83vh] w-[750px] max-w-[100%] rounded-md bg-[#24242486] backdrop-blur-[80px]' >
             <div className='flex flex-col justify-around gap-2 h-[48%] w-[100%] bg-[#d0cdcd23] rounded-[4px] py-2 px-4'>
                 {!isOnline ? <p></p> : <div className='text-red-500'>City Not Found or Network Issue</div>}
                 {loading ? <Loading /> : error ? <p className='text-red-500'>{error}</p> : <p title='City & Country' className='cursor-default'>{sharedData}, {country}</p>}
